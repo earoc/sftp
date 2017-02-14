@@ -1,0 +1,7 @@
+sftp:
+    image: atmoz/sftp
+    volumes:
+        - /host/share:/home/thestudio/share
+    ports:
+        - "2222:22"
+    command: theuser:thepass:::upload
